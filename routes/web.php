@@ -27,3 +27,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/protected', 'ProtectedController@index')->middleware('auth');
+
+Route::get('/admin', 'AdminController@index');
